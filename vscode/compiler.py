@@ -306,7 +306,6 @@ def build(extension: Extension, publish: bool = False, config: dict = None) -> N
     time_taken = round((end - start) * 1000, 2)
     print(f"\033[1;37;49mBuild completed successfully in {time_taken} ms!", "\033[0m")
 
-
 # Build Themes
 
 

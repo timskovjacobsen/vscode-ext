@@ -1,3 +1,5 @@
+import sys
+
 from .config import Config
 from .types import *
 from .utils import *
@@ -184,6 +186,11 @@ class Extension:
                     "activity_bar_webview must be either an instance of vscode.StaticWebview or dict"
                 )
 
+    def run(self):
+        """
+        Runs the extension.
+        """
+        raise NotImplementedError
 
 class Command:
     """
